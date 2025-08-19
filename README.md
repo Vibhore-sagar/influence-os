@@ -1,23 +1,29 @@
-# Influence OS (Local LLM Scaffold)
+# Influence OS – AI Intern Project
 
-MVP scaffold for Influence OS with FastAPI backend + Next.js frontend.
-Uses **HuggingFace Transformers (local pipeline)** for text generation (no API keys).
+Influence OS is an AI-powered LinkedIn content workflow platform.  
+It enables professionals to **generate**, **optimize**, **schedule**, and **analyze** posts with AI assistance.
 
-## Run Backend
+---
+
+## 🚀 Features
+- 🤖 **AI Post Generation** – Title, body, hashtags, hooks (A/B variants)
+- 📅 **Content Calendar** – Plan posts and auto-publish with scheduler
+- 📊 **Analytics Dashboard** – Totals, breakdown charts, engagement trends
+- 🔑 **LinkedIn OAuth Login** – Mock login (real API-ready)
+- 📤 **Mock Publishing** – Safe demo without posting to LinkedIn
+
+---
+
+## ⚙️ Tech Stack
+- **Backend**: FastAPI, SQLAlchemy, SQLite, APScheduler  
+- **Frontend**: Next.js (React, TypeScript, Tailwind, Recharts, SWR)  
+- **Database**: SQLite (`influence.db`)  
+
+---
+
+## 🛠️ Setup & Run Locally
+
+### 1. Clone Repository
 ```bash
-cd backend
-python -m venv .venv
-.venv\Scripts\activate   # Windows
-pip install -r requirements.txt
-uvicorn app.main:app --reload --port 8000
-```
-
-## Run Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend: http://localhost:3000  
-Backend API: http://localhost:8000/docs
+git clone <your-repo-url>
+cd influence-os
